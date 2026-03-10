@@ -57,17 +57,6 @@ export default function Dashboard() {
       // Default team members
       const defaultUsers = [
         { id: 1, username: 'admin', fullname: 'Administrator', role: 'Administrator', email: 'admin@internware.com' },
-        { id: 2, username: 'ashfaque', fullname: 'Ashfaque Waris', role: 'Founder', email: 'ashfaque@internware.com' },
-        { id: 3, username: 'saurav', fullname: 'Saurav Dam', role: 'Founder', email: 'saurav@internware.com' },
-        { id: 4, username: 'luv', fullname: 'Luv Bagga', role: 'Co-Founder', email: 'luv@internware.com' },
-        { id: 5, username: 'sarthak', fullname: 'Sarthak Kapoor', role: 'Co-Founder', email: 'sarthak@internware.com' },
-        { id: 6, username: 'tanya', fullname: 'Tanya Kohli', role: 'Co-Founder', email: 'tanya@internware.com' },
-        { id: 7, username: 'nishtha', fullname: 'Nishtha Chugh', role: 'Co-Founder', email: 'nishtha@internware.com' },
-        { id: 8, username: 'riya', fullname: 'Riya Madaan', role: 'President', email: 'riya@internware.com' },
-        { id: 9, username: 'satyam', fullname: 'Satyam Arora', role: 'Chief Business Development', email: 'satyam@internware.com' },
-        { id: 10, username: 'shubh', fullname: 'Shubh Sharma', role: 'Chief Coordinator', email: 'shubh@internware.com' },
-        { id: 11, username: 'ayush', fullname: 'Ayush Bachheti', role: 'Chief Corporate Relations', email: 'ayush@internware.com' },
-        { id: 12, username: 'saqib', fullname: 'Mohd Saqib', role: 'Chief Technical Officer', email: 'saqib@internware.com' },
       ];
       setUsers(defaultUsers);
       localStorage.setItem('team_members', JSON.stringify(defaultUsers));
@@ -397,8 +386,8 @@ export default function Dashboard() {
                       <button
                         onClick={() => handleToggleTask(task)}
                         className={`mt-1 flex-shrink-0 transition-colors ${task.done
-                            ? 'text-slate-800 dark:text-white'
-                            : 'text-slate-400 dark:text-white/50 hover:text-slate-600 dark:hover:text-white'
+                          ? 'text-slate-800 dark:text-white'
+                          : 'text-slate-400 dark:text-white/50 hover:text-slate-600 dark:hover:text-white'
                           }`}
                       >
                         {task.done ? <CheckCircle size={24} /> : <Circle size={24} />}
