@@ -46,6 +46,21 @@ Deployment
 
 ---
 
+## Live Demo
+
+You can view the live deployed version of the **InternWare Task Manager (Frontend)** here:
+
+🔗 **Live Application:**
+https://internwaretaskmanager.netlify.app/
+
+### Demo Login Credentials
+
+Username: **admin**
+Password: **internware**
+
+This project demonstrates a modern **React-based frontend interface** featuring a glassmorphism login design, responsive dashboard layout, search functionality, and dark/light theme support.
+
+
 ## Project Structure
 
 ```
